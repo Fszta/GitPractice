@@ -119,10 +119,37 @@ Dans cette partie, vous allez implémenter un pipeline de CI basique contenant d
 - Execution automatique de tests unitaires
 
 ### 3.1 Configuration du linter
-Pour cette étape, vous allez utiliser `pylint`.
+Pour cette étape, vous allez utiliser `pylint`. Pour l'installer localement : `pip install pylint`
 
-Github fournit un template pré-configuré permettant d'executé pylint dès qu'une modification est faite sur votre projet.
+Github fournit un template pré-configuré permettant d'executer pylint dès qu'une modification est faite sur votre projet.
+Pour le configurer, rendez-vous dans l'onglet `Actions` et recherchez `pylint`, puis cliquez sur `configure` 
+
+<img width="1224" alt="Capture d’écran 2024-04-12 à 12 08 27" src="https://github.com/Fszta/GitPractice/assets/36471574/46384b79-1d36-43f2-bf9a-463ba42701e9">
 
 
+Une fois configuré :
+- Rendez-vous sur votre IDE, récupérer les modifications distantes : `git pull origin main`
+- Faites une modifications sur votre projet et poussez la vers le répertoire distant (peu importe le fichier modifié, l'objectif est de vérifier que le pipeline se déclenche correctement)
+
+#### Appelez votre encadrant pour validation.
 
 ### 3.2 Execution automatique des tests unitaires
+Pour cette étape vous allez implémenter des tests unitaires simples, et les executez automatiquement à chaque modifications sur votre projet.
+> L'objectif du tp étant centré sur git, la pertinence des tests ne sera pas évaluée.
+
+- Installez pytest localement : `pip install pytest`
+
+- Dans votre fichier `test_calculator.py` implémentez le test suivant : 
+```python
+from calculator import addition
+
+
+
+def test_addition():
+    assert addition(1, 2) == 3
+```
+
+- Executez le test en executant la command `pytest` dans votre terminal, vous devriez avoir une output similaire à celle sur le screenshot suivant :
+<img width="1479" alt="Capture d’écran 2024-04-12 à 12 22 58" src="https://github.com/Fszta/GitPractice/assets/36471574/c996ddf8-0324-4432-bbf5-0ccbfd643d34">  
+
+
