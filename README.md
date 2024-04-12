@@ -79,7 +79,10 @@ def addition(a, b):
 
 ```
 
-- Pousser les modifications vers le répertoire distant (add, commit, push ... cf partie 1.3)
+- Pousser les modifications vers le répertoire distant (add, commit, push ... cf partie 1.3. Attention, le nom de votre branche n'est plus `main` mais `feat/addition`)
+- Sur github, créer une pull request pour intégrer les modifications dans votre branche principale (main)
+<img width="927" alt="Capture d’écran 2024-04-12 à 11 47 59" src="https://github.com/Fszta/GitPractice/assets/36471574/e53f2f24-ab02-4303-b9a1-e35ec0bd0249">
+
 
 #### Appelez votre encadrant pour validation.
 
