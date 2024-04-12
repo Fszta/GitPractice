@@ -70,7 +70,8 @@ Vous allez créer une calculette (en python), supportant 3 opérations :
 
 
 - Depuis votre ide, créez une branche nommée `feat/addition`
-- Implémentez la fonction addition prennant en paramètre deux nombres, et retournant un nombre
+
+- Dans le fichier `calculator.py` : implémentez la fonction addition prennant en paramètres deux nombres, et retournant un nombre
 
 ```python
 def addition(a, b):
@@ -79,14 +80,49 @@ def addition(a, b):
 
 ```
 
+
 - Pousser les modifications vers le répertoire distant (add, commit, push ... cf partie 1.3. Attention, le nom de votre branche n'est plus `main` mais `feat/addition`)
+
 - Sur github, créer une pull request pour intégrer les modifications dans votre branche principale (main)
 <img width="927" alt="Capture d’écran 2024-04-12 à 11 47 59" src="https://github.com/Fszta/GitPractice/assets/36471574/e53f2f24-ab02-4303-b9a1-e35ec0bd0249">
+
+- Valider la pull request pour intégrer les modifications dans votre branche principale (main)
+<img width="933" alt="Capture d’écran 2024-04-12 à 11 53 15" src="https://github.com/Fszta/GitPractice/assets/36471574/ff5fa868-4881-435c-934b-dc32ca45c8a4">
 
 
 #### Appelez votre encadrant pour validation.
 
 ### 2.2 - Fonctionnalité soustraction
+
+Comme dans la partie précédente, implémentez la fonctionnalité de soustraction via une branche `feat/substraction`.
+
+**Attention** avant de créer la branche, vous devez : 
+- Vous déplacer sur la branche main : `git checkout main`
+- Récupérer les modifications du répertoire distant (ce qui a été mergé précédemment) : `git pull origin main`
+
+#### Appelez votre encadrant pour validation.
+
 ### 2.3 - Fonctionnalité division
 
+Comme dans la partie précédente, implémentez la fonctionnalité de division via une branche `feat/division`
 
+**Attention** avant de créer la branche, vous devez : 
+- Vous déplacer sur la branche main : `git checkout main`
+- Récupérer les modifications du répertoire distant (ce qui a été mergé précédemment) : `git pull origin main`
+
+#### Appelez votre encadrant pour validation.
+
+
+## 3 - Continuous integration pipeline
+Dans cette partie, vous allez implémenter un pipeline de CI basique contenant deux étapes : 
+- Execution automatique d'un linter (Utililaire visant à contrôler que les conventions de développement sont bien respectées - Style du code)
+- Execution automatique de tests unitaires
+
+### 3.1 Configuration du linter
+Pour cette étape, vous allez utiliser `pylint`.
+
+Github fournit un template pré-configuré permettant d'executé pylint dès qu'une modification est faite sur votre projet.
+
+
+
+### 3.2 Execution automatique des tests unitaires
