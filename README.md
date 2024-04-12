@@ -159,3 +159,11 @@ N'oubliez pas de pousser les modifications vers le répertoire distant
 #### Appelez votre encadrant pour validation.
 
 ### 3.3 Execution automatique des tests unitaires
+
+- Renommez le fichier `.github/workflows/pylint.yml`  `.github/workflows/ci.yml`
+- Dans le même fichier, mettre à jour le step `Install dependencies` pour aussi installer `pytest`
+- Créer un nouveau step `Execute unit test` executant la commande : `pytest` juste après `Install dependencies` et avant `Analysing the code with pylint`
+- Poussez vos modifications vers le répertoire distant
+- Faites une modifications pour vérifier que les tests s'executent bien.
+
+#### Appelez votre encadrant pour validation.
