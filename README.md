@@ -19,7 +19,7 @@ Une fois le projet github créé, récupérez l'url de votre projet pour le clô
 - **Depuis un terminal** clôner votre projet: `git clone url_de_votre_projet.git` (Remplacez url_de_votre_projet.git par l'url précédemment copiée - cf screenshot)
 - **Ouvrez le projet dans votre IDE (pycharm, vscode...)**
 
-#### Appelez votre tuteur pour validation.
+#### Appelez votre encadrant pour validation.
 
 
 ### 1.3 - Ajouter des fichiers à votre projets
@@ -29,7 +29,7 @@ Depuis votre ide, créez les trois fichiers (vide pour le moment) suivants :
 - test_calculator.py
 
 
-Votre projet doit avoir la structure suivante : 
+Votre projet local doit avoir la structure suivante : 
 ```bash
 ├── .gitignore
 ├── README.md
@@ -40,4 +40,50 @@ Votre projet doit avoir la structure suivante :
 
 
 Vous devez maintenant "pusher" ces trois nouveaux fichiers vers le répertoire git distant.
-Pour rappel, vous devez réaliser trois commandes pour obtenir le résultat escompter : 
+Pour rappel, vous devez réaliser trois commandes pour obtenir le résultat escompter :
+- `git add votre_fichier` - Ajoute le fichier à la zone de staging
+- `git commit -m "Un message descriptif de votre commit"` 
+- `git push origin main` - Pousse les modifications vers le répertoire distant 
+
+> N'oubliez pas de remplacer `votre fichier` & `Un message descriptif de votre commit`..
+
+Vous pouvez vérifier le bon fonctionnement en vous rendant sur votre projet github, qui doit maintenant contenir les commits, et donc les fichiers précédemment ajoutés.
+
+#### Appelez votre encadrant pour validation.
+
+## 2 - Les branches
+L'objectif du tp n'est pas de tester votre capacité à coder, néanmoins il est nécessaire d'implémenter quelques fonctions pour la bonne réalisation du tp.
+
+Vous allez créer une calculette (en python), supportant 3 opérations : 
+- addition
+- soustraction
+- division
+
+> Pour l'implémentation de chaque opération, vous devrez créer une branche dédiée.
+
+### 2.1 - Fonctionnalité addition
+
+**Rappel**
+- Pour créer une branche et se "déplacer" dessus : `git checkout -b nom_de_la_branche`
+- Pour simplement changer de branche : `git checkout nom_de_la_branche`
+<hr>
+
+
+- Depuis votre ide, créez une branche nommée `feat/addition`
+- Implémentez la fonction addition prennant en paramètre deux nombres, et retournant un nombre
+
+```python
+def addition(a, b):
+  ...
+  return result
+
+```
+
+- Pousser les modifications vers le répertoire distant (add, commit, push ... cf partie 1.3)
+
+#### Appelez votre encadrant pour validation.
+
+### 2.2 - Fonctionnalité soustraction
+### 2.3 - Fonctionnalité division
+
+
