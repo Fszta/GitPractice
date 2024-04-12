@@ -133,7 +133,7 @@ Une fois configuré :
 
 #### Appelez votre encadrant pour validation.
 
-### 3.2 Execution automatique des tests unitaires
+### 3.2 Implémentation de tests unitaires
 Pour cette étape vous allez implémenter des tests unitaires simples, et les executez automatiquement à chaque modifications sur votre projet.
 > L'objectif du tp étant centré sur git, la pertinence des tests ne sera pas évaluée.
 
@@ -152,4 +152,10 @@ def test_addition():
 - Executez le test en executant la command `pytest` dans votre terminal, vous devriez avoir une output similaire à celle sur le screenshot suivant :
 <img width="1479" alt="Capture d’écran 2024-04-12 à 12 22 58" src="https://github.com/Fszta/GitPractice/assets/36471574/c996ddf8-0324-4432-bbf5-0ccbfd643d34">  
 
+- Implémentez deux autres tests : `test_division` & `test_substraction` et executez les.
 
+N'oubliez pas de pousser les modifications vers le répertoire distant
+
+#### Appelez votre encadrant pour validation.
+
+### 3.3 Execution automatique des tests unitaires
