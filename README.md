@@ -26,7 +26,7 @@ Une fois le projet github créé, récupérez l'url de votre projet pour le clô
 Depuis votre ide, créez les trois fichiers (vide pour le moment) suivants :
 - calculator.py
 - main.py
-- test_calculator.py
+  
 
 
 Votre projet local doit avoir la structure suivante : 
@@ -35,7 +35,6 @@ Votre projet local doit avoir la structure suivante :
 ├── README.md
 ├── calculator.py
 ├── main.py
-└── test_calculator.py
 ```
 
 
